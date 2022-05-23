@@ -27,7 +27,7 @@
 
     <main>
 
-      <div id="startCard" class="card" style="width: 18rem;">
+      <div id="startCard1" class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Code Quiz</h5>
           <p class="card-text">Start the quiz by clicking the button below! Correct answers will put you on the leaderboard. Wrong answers will penalize your remaining time!  </p>
@@ -36,38 +36,35 @@
       </div>
 
 
-      <div hidden id="questionCard1" class="card" style="width: 18rem;">
+      <div  id="questionCard1" class="card" style="width: 18rem;">
         <div class="card-header">
-          Question 1
+          <h2 id="question1Text"></h2>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+        <ul id="quizOptions"  class="list-group list-group-flush">
+          <li id="optionA" class="list-group-item"><button class="btn btn-primary" type="button">Button</button>An item</li>
+          <li id="optionB" class="list-group-item"><button class="btn btn-primary" type="button">Button</button>A second item</li>
+          <li id="optionC" class="list-group-item"><button class="btn btn-primary" type="button">Button</button>A third item</li>
+          <li id="optionD" class="list-group-item"><button class="btn btn-primary" type="button">Button</button>A 4 item</li>
+
         </ul>
       </div>
 
-      <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="button">Button</button>
-        <button class="btn btn-primary" type="button">Button</button>
-      </div>
+
+      <form id="results" class="row g-3">
+        <div class="col-md-6">
+          <input type="email" class="form-control" id="inputFirstName" placeholder="First name">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Last name" id="inputLastName">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
 
 
-
-
-        
    
 
-    <div class="container">
-      <div class="row">
-        <div class="col"></div>
-        <div class="col-4">
-          <button type="button"  class="btn btn-primary btn-lg">
-            Start Quiz
-          </button>
-        </div>
-        <div class="col"></div>
-      </div>
     </div>
     <div></div>
   </body>
