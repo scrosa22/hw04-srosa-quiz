@@ -30,13 +30,13 @@ function displayTimer1() {
 var questionsEl = [
     {
         questionText: "Question 1",
-        qOption1: ["1. A", "2. B","3. C"],
-        qAnswer1: "2. B",
+        options: ["1. A", "2. B","3. C","4. D"],
+        answer: "2. B",
     },
     {
-        questionText: "Question 1",
-        qOption1: ["1. A", "2. B","3. C"],
-        qAnswer1: "2. B",
+        questionText: "Question 2",
+        options: ["1. A", "2. B","3. C","4. D"],
+        answer: "2. B",
     },
 
             
@@ -49,49 +49,63 @@ function hideCards() {
 
 }
 
+hideCards();
 
 
 function startButtonF1() {
-    hideCards();
-    console.log('button clicked')
+    
     startCard.setAttribute("hidden", true)
     quizContainer.removeAttribute("hidden", true)
 }
 
 startButton1.addEventListener("click", function() {
+    
     startButtonF1();
     displayTimer1();
- 
-
+    renderQuestions();
 })
 
 
 
-
-
-
-
-
+var currentQuestion;
 
 function renderQuestions() {
-    chosenQuestion = questionsEl[math.floor(math.random() * questionsEl.length)];
+    currentQuestion = 0;
+    var question = questionsEl[currentQuestion];
+    var options = question.options;
+    var hQuestionEl = document.querySelector("#question1Text");
+    hQuestionEl.textContent = question.questionText
 
-    // for (var i = 0; i < 'variable'; i++){  }
-
+    for (var i = 0; i < options.length; i++) {
+        var option = options[i];
+        var optionBtn = document.querySelector("#option" + i);
+        optionBtn.textContent = option;
+    }
 }
 
 
-// function createing question cards
-var quest1 = document.createElement("div");
-quest1.text("question 1 loading")
-quizContainer.appendChild(quest1)
 
-function saveLastScore() {
-    var userScore = {
-    userName: userName.value,
-    score: score.value,
+
+
+// function renderQuestions() {
+//     chosenQuestion = questionsEl[math.floor(math.random() * questionsEl.length)];
+
+//     for (var i = 0; i < 'variable'; i++){  }
+
+// }
+
+
+//  function createing question cards
+// var quest1 = document.createElement("div");
+// quest1.text("question 1 loading")
+// quizContainer.appendChild(quest1)
+
+// function saveLastScore() {
+//     var userScore = {
+//     userName: userName.value,
+//     score: score.value,
     
-};
-    localStorage.setItem("userScore", JSON.stringify(userScore));
-}
+// };
+//     localStorage.setItem("userScore", JSON.stringify(userScore));
+// }
 
