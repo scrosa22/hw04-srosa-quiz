@@ -1,13 +1,14 @@
 
 var quizContainer = document.getElementById("questionCard1");
 var startButton1 = document.getElementById("start1");
-var startCard = document.getElementById("startCard1");
+var startCard = document.querySelector("#startCard1");
 var scoreCard = document.getElementById("scoreCardUser");
 var resultsContainer = document.getElementById("results");
 var leaderBoardC = document.querySelector("#leaderBoardCard")
 
 
 // var quizContainer = $('#quiz');
+
 
 var timer1 = 6;
 var timerInterval;
@@ -151,7 +152,7 @@ var userInput = document.querySelector("#inputFirstName")
 
 scoreButton.addEventListener("click", storeScore)
 
-// submit button not returning
+
 function storeScore(x) {
     x.preventDefault();
     if (!userInput.value) {
@@ -190,6 +191,8 @@ function getLeaderBoard() {
     return leaderBoardList;
 }
 
+
+
 function renderLeaderBoard() {
     var sortLeaderBoardList = sortLeaderBoard();
     var highScoreList = document.querySelector("#highScoreList")
@@ -214,6 +217,9 @@ function sortLeaderBoard() {
     return leaderBoardList
 }
 
+var backButton = document.querySelector("#backBTN");
+backButton.addEventListener("click", returnToStart);
+
 var clearButton = document.querySelector("#clearBTN")
 clearButton.addEventListener("click", clearHighScores);
 
@@ -222,12 +228,12 @@ function clearHighScores () {
     renderLeaderBoard();
 }
 
-var backButton = document.querySelector("backBTN")
-backButton.addEventListener("click", returnToStart);
+
 
 function returnToStart() {
     hideCards();
-    startCard.removeAttribute("hidden")
+    console.log("cardhidden")
+    startCard.removeAttribute("hidden", true)
 }
 
 
@@ -242,6 +248,13 @@ function showLeaderBoard() {
 }
 
 
+
+
+
+backButton?.addEventListener('click', () => {
+    console.log('button clicked');
+    returnToStart();
+});
 
 // function saveLastScore() {
 //     var userScore = {
