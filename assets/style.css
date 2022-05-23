@@ -1,0 +1,19 @@
+.headerB {
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    color: white;
+    background-color: #191970;
+    padding: 12px;
+}
+
+
+
+.mainBackground {
+    background-color: aqua  ;
+
+}
+
+.card {
+    border: none;
+}
