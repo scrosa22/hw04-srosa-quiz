@@ -37,9 +37,9 @@
 
 
       <div  id="questionCard1" class="card" style="width: 18rem;">
-        <div class="card-header">
+        
           <h2 id="question1Text"></h2>
-        </div>
+        
         <div id="quizOptions"  class="list-group list-group-flush">
           <button id="option0" class="btn btn-primary" type="button">A</button>
           <button id="option1" class="btn btn-primary" type="button">B</button>
@@ -47,20 +47,42 @@
           <button id="option3" class="btn btn-primary" type="button">D</button>
 
         </div>
+      
+
+        <div id="results">
+          <hr>
+          <p id="resultText1"></p>
+        </div>
+      
       </div>
 
+      <div id="scoreCardUser">
+          <h2>Your Score is: <span id="score1"></span></h2>
+        <form  class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="Your name here!">
+        </div>
 
-      <form id="results" class="row g-3">
-        <div class="col-md-6">
-          <input type="email" class="form-control" id="inputFirstName" placeholder="First name">
-        </div>
-        <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Last name" id="inputLastName">
-        </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" id="scoreBtn" class="btn btn-primary">Submit Score</button>
         </div>
-      </form>
+        </form>
+      </div>
+      
+      <div id="leaderBoardCard">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            High Scores
+          </div>
+          <ol id="highScoreList" class="list-group list-group-flush">
+            <button id="backBTN" class="button">Go Back</button>
+            <button id="clearBTN" class="button">Clear High Score List</button>
+            
+          </ol>
+        </div>
+      </div>
+        
+        
 
 
    
