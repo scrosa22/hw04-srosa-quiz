@@ -16,8 +16,7 @@
   </head>
   <body>
     <header class="headerB"> 
-        <!-- <a href=""> -->
-        <a>Leaderboard</a>
+        <a id="LeaderBoardLink">Leaderboard</a>
 
         <a>Time: <span id="timer1"></span> </a>
 
@@ -25,9 +24,9 @@
   
 
 
-    <main>
+    <main class="d-flex align-items-center">
 
-      <div id="startCard1" class="card" style="width: 18rem;">
+      <div id="startCard1" class="card " style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Code Quiz</h5>
           <p class="card-text">Start the quiz by clicking the button below! Correct answers will put you on the leaderboard. Wrong answers will penalize your remaining time!  </p>
@@ -56,7 +55,7 @@
       
       </div>
 
-      <div id="scoreCardUser">
+      <div id="scoreCardUser" class="justify-content-center">
           <h2>Your Score is: <span id="score1"></span></h2>
         <form  class="row g-3">
         <div class="col-md-6">
@@ -69,19 +68,7 @@
         </form>
       </div>
       
-      <!-- <div id="leaderBoardCard">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header">
-            High Scores
-          </div>
-          <ol id="highScoreList" class="list-group list-group-flush">
-            <button id="backBTN" class="button">Go</button>
-            <button id="clearBTN" class="button">Clear High Score List</button>
-            
-          </ol>
-        </div>
-      </div>
-         -->
+ 
       <div id="leaderBoardCard">
         <div class="card" style="width: 18rem;">
           <div class="card-header">
