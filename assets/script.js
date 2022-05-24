@@ -29,29 +29,29 @@ function countdown(){
 
 var questionsEl = [
   {
-    questionText: "Question 1",
-    options: ["1. A", "2. B", "3. C", "4. D"],
-    answer: "2. B",
+    questionText: "Question 1: Which of the following IS NOT a data types used in javascript?",
+    options: ["1. String", "2. Text", "3. Boolean", "4. Number"],
+    answer: "2. Text",
   },
   {
-    questionText: "Question 2",
-    options: ["1. A", "2. B", "3. C", "4. D"],
-    answer: "2. B",
+    questionText: "Question 2: Which of the following function of String object creates a string to be displayed as bold as if it were in a <b> tag?",
+    options: ["1. blink()", "2. bold()", "3. big()", "4. anchor()"],
+    answer: "2. bold()",
   },
   {
-    questionText: "Question 3",
-    options: ["1. A", "2. B", "3. C", "4. D"],
-    answer: "2. B",
+    questionText: "Question 3: Which of the following will provide the number of elements of a form?",
+    options: ["1. document.myform.elements.count", "2. document.myform.length", "3. document.myform.count", "4. document.myform.elements.length"],
+    answer: "4. document.myform.elements.length",
   },
   {
-    questionText: "Question 4",
-    options: ["1. A", "2. B", "3. C", "4. D"],
-    answer: "2. B",
+    questionText: "Question 4: Which method returns the string starting at the specified position?",
+    options: ["1. substr()", "2. getSubstring()", "3. slice()", "4. None of the above"],
+    answer: "3. slice()",
   },
   {
-    questionText: "Question 5",
-    options: ["1. A", "2. B", "3. C", "4. D"],
-    answer: "2. B",
+    questionText: "Question 5: Javascript is considered whata language?",
+    options: ["1. Object-Oriented", "2. Object-Based", "3. Object-Platform", "4. None of the above"],
+    answer: "1. Object-Oriented",
   },
 ];
 
